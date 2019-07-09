@@ -1,4 +1,4 @@
-require 'pry' # in case you want to use binding.pry
+require 'byebug' # in case you want to use binding.pry
 require 'active_record'
 require_relative 'lib/store'
 require_relative 'lib/employee'
@@ -10,8 +10,8 @@ puts 'Establishing connection to database ...'
 ActiveRecord::Base.establish_connection(
   adapter: 'postgresql',
   database: 'ar_exercises',
-  username: 'development',
-  password: 'development',
+  username: 'labber',
+  password: 'labber',
   host: 'localhost',
   port: 5432,
   pool: 5,
