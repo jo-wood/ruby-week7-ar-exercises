@@ -7,4 +7,12 @@ require_relative './exercise_4'
 puts "Exercise 5"
 puts "----------"
 
-puts Store.sum(:annual_revenue)
+total_revenue = Store.sum(:annual_revenue)
+average_revenue = Store.average(:annual_revenue)
+
+puts "total: #{total_revenue}"
+puts "average: #{average_revenue}"
+
+best_stores = Store.where("annual_revenue > 1000000").count
+
+puts "There are #{best_stores} stores generating over $1M in revenue"
