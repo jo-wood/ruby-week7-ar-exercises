@@ -24,7 +24,7 @@ store_two.save
 
 store_three = Store.new do |store|
     store.name = "Yaletown"
-    store.annual_revenue = 190000
+    store.annual_revenue = 430000
     store.mens_apparel = true
     store.womens_apparel= true
 end
