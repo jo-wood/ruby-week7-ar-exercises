@@ -26,7 +26,7 @@ GEM
     pg (1.1.4)
     thread_safe (0.2.0)
       atomic (>= 1.1.7, < 2)
-    tzinfo (0.3.39)
+    tzinfo (0.3.61)
 
 PLATFORMS
   ruby
